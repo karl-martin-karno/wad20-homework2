@@ -20,7 +20,7 @@ $(document).ready(function() {
         var dropdown = $(".dropdown");
 
         if (dropdown !== event.target && !dropdown.has(event.target).length && trigger !== event.target) {
-          $(".dropdown").slideToggle();
+          $(".dropdown").hide();
         }
       });
     },
