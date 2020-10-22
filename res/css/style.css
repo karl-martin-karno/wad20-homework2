@@ -207,13 +207,13 @@ nav div.avatar-container {
     text-align: center;
     float: left;
     width: 45%;
-    padding: 20px;
+    padding: 10px;
 
 }
 
 .profile-container-item {
-
-    box-shadow: 0 0 15px rgba(38, 50, 56, 0.33);
+    width: 100%;
+    box-shadow: 0 0 5px rgba(38, 50, 56, 0.33);
     border-radius: 5px;
     padding: 5px;
 
@@ -221,8 +221,11 @@ nav div.avatar-container {
 }
 
 .profile-avatar{
-    width:200px;
-    height:200px;
+    min-height: 50px;
+    min-width: 75px;
+    width: 25%;
+    max-width: 134px;
+    height: 90px;
     object-fit:cover;
     border-radius:50%;
     display: block;
@@ -239,12 +242,12 @@ nav div.avatar-container {
     border: 2px solid #663399;
     color: #FFFFFF;
     text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
+    padding: 10px;
+    width: 30%;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+    font-size: inherit;
 }
 
 .followed {
@@ -254,13 +257,14 @@ nav div.avatar-container {
     border: 2px solid #663399;
     color: #663399;
     text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
+    padding: 10px;
+    width: 30%;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+    font-size: inherit;
 }
+
 .follow span {
     cursor: pointer;
     display: inline-block;
@@ -309,6 +313,9 @@ nav div.avatar-container {
 .followed:hover span:after {
     opacity: 1;
     right: 0;
+}
+h1{
+    font-size:inherit;
 }
 
 
