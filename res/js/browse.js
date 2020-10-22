@@ -21,7 +21,6 @@ $(function () {
             let img = $('<img class="profile-avatar">').attr('src', post.avatar)
             let fullname = $('<h1>').text(post.firstname).append(" "+ post.lastname)
 
-
             buttonClicked()
 
             let button = $('<button class="follow">').text("Follow")
@@ -32,11 +31,8 @@ $(function () {
             $('section').append(div);
 
             buttonClicked()
-
-
         }
     })
-
 });
 
 
