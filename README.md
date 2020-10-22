@@ -1,3 +1,5 @@
 # wad20-homework2
 
-Markus,Birgit,Karl
+Karl Karnö
+Birgitt Majas
+Markus Aksli
