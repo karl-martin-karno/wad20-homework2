@@ -119,9 +119,11 @@ nav div.avatar-container {
     margin: auto auto;
     padding: 90px 15px 15px 15px;
     background-color: #ffffff;
+    text-align: center;
 }
 
 .post {
+    text-align: left;
     width: 80%;
     margin: 15px auto;
     box-shadow: 0 0 15px rgba(38, 50, 56, 0.33);
@@ -209,7 +211,7 @@ nav div.avatar-container {
     display: none;
     right: 0;
     position: absolute;
-    padding:20px 25px 20px 0px;
+    padding:20px 25px 20px 0;
     background-color: #ffffff;
     min-width: 120px;
     min-height: 140px;
@@ -220,17 +222,16 @@ nav div.avatar-container {
 .dropdown a:hover {
     color: #01579b;
 }
-    
+
 ul {
     list-style-type: none;
 }
 
 .profile-container{
     text-align: center;
-    float: left;
     width: 45%;
     padding: 10px;
-
+    display: inline-block;
 }
 
 .profile-container-item {
@@ -249,7 +250,7 @@ ul {
     max-width: 134px;
     height: 90px;
     object-fit:cover;
-    border-radius:50%;
+    clip-path: circle();
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -266,6 +267,7 @@ ul {
     text-align: center;
     padding: 10px;
     width: 30%;
+    min-width: max-content;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
