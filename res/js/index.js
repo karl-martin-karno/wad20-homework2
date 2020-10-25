@@ -4,14 +4,14 @@ $(function () {
             let media = '';
             if (post.media != null) {
                 if (post.media.type === 'image') {
-                    media = '            <div class="post-image">\n' +
-                        `                <img src="${post.media.url}" alt="">\n` +
-                        '            </div>'
+                    media = '<div class="post-image">\n' +
+                        `<img src="${post.media.url}" alt="">\n` +
+                        '</div>'
                 } else if (post.media.type === 'video') {
-                    media = '            <div class="post-image">\n' +
-                        '                <video controls>\n' +
-                        `                    <source src="${post.media.url}">\n` +
-                        '            </div>'
+                    media = '<div class="post-image">\n' +
+                        '<video controls>\n' +
+                        `<source src="${post.media.url}">\n` +
+                        '</div>'
                 }
             }
             $('section').append(`<div class="post">

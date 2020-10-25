@@ -4,16 +4,14 @@ $(function () {
         for (let post of response) {
 
             let div = $('<div class="profile-container">')
-            let div2 = $('<div class="profile-container-item">')
             let img = $('<img class="profile-avatar">').attr('src', post.avatar)
             let fullname = $('<h1>').text(post.firstname).append(" "+ post.lastname)
 
 
-            let button = $('<button class="follow">').text("Follow")
-            div2.append(img)
-            div2.append(fullname)
-            div2.append(button)
-            div.append(div2);
+            let button = $('<button class="follow-button follow">').text("Follow")
+            div.append(img)
+            div.append(fullname)
+            div.append(button)
             $('section').append(div);
         }
         $('.follow').click(function () {

@@ -169,10 +169,6 @@ nav div.avatar-container {
 
 .post .post-image img, video {
     width: 100%;
-    min-height: 150px;
-    max-height: 350px;
-    object-fit: cover;
-    object-position: top center;
 }
 
 .post .post-title {
@@ -233,112 +229,46 @@ ul {
     width: 45%;
     padding: 10px;
     display: inline-block;
-}
-
-.profile-container-item {
-    width: 100%;
     box-shadow: 0 0 5px rgba(38, 50, 56, 0.33);
     border-radius: 5px;
-    padding: 5px;
-
-
+    margin: 10px;
 }
 
 .profile-avatar{
     min-height: 50px;
+    height: 90px;
     min-width: 75px;
     width: 25%;
     max-width: 134px;
-    height: 90px;
     object-fit:cover;
     clip-path: circle();
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     object-position: 50% 10%;
-
+    margin: auto;
 }
 
-.follow {
+.follow-button {
     display: inline-block;
     border-radius: 4px;
-    background-color: #663399;
     border: 2px solid #663399;
-    color: #FFFFFF;
     text-align: center;
     padding: 10px;
     width: 30%;
     min-width: max-content;
     transition: all 0.5s;
-    cursor: pointer;
     margin: 5px;
     font-size: inherit;
 }
 
-.followed {
-    display: inline-block;
-    border-radius: 4px;
+.follow-button.follow {
+    background-color: #663399;
+    color: #FFFFFF;
+}
+
+.follow-button.followed {
     background-color: #FFFFFF;
-    border: 2px solid #663399;
     color: #663399;
-    text-align: center;
-    padding: 10px;
-    width: 30%;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    font-size: inherit;
 }
 
-.follow span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.follow span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.follow:hover span {
-    padding-right: 25px;
-}
-
-.follow:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
-.followed span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.followed span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.followed:hover span {
-    padding-right: 25px;
-}
-
-.followed:hover span:after {
-    opacity: 1;
-    right: 0;
-}
 h1{
     font-size:inherit;
 }
