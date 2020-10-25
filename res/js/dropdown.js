@@ -1,17 +1,12 @@
 // Show avatar dropdown menu with loaded data
 
 $(document).ready(function() {
-	$.ajax({
-		type: 'GET',
-		dataType: 'json',
-		url: 'https://private-anon-a3e92b771c-wad20postit.apiary-mock.com/users/1',
+	$.get('https://private-anon-a3e92b771c-wad20postit.apiary-mock.com/users/1', function(response) {
+      $('#avatar-img').attr('src', response.avatar);
 
-		success: function(data) {
-      $('#avatar-img').attr('src', data.avatar);
-      
       $(".avatar").click(function() {
-        $('#name').html(data.firstname + ' ' + data.lastname);
-        $('#email').html(data.email);
+        $('#name').html(response.firstname + ' ' + response.lastname);
+        $('#email').html(response.email);
         $('.dropdown').slideToggle();
       });
 
@@ -23,10 +18,5 @@ $(document).ready(function() {
           $(".dropdown").hide();
         }
       });
-    },
-    error: function (jqXHR, textStatus, errorThrown) {
-      console.log(textStatus, errorThrown);
-    }
-    
-  });
+    });
 });

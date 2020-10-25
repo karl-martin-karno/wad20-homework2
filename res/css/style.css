@@ -199,6 +199,7 @@ nav div.avatar-container {
     line-height: 10px;
     text-align: left;
     border: none;
+    transition: all 0.2s;
 }
 
 .like-button.liked {
